@@ -1,0 +1,287 @@
+
+html, body {
+  overflow: hidden;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 130vh;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+          transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.background:first-child {
+  background-image: url(skyscrp1.jpg);
+  -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+}
+.background:first-child .content-wrapper {
+  -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+}
+.background:nth-child(2) {
+  background-image: url(skyscrp2.jpg);
+    -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+}
+.background:nth-child(3) {
+  background-image: url(skyscrp3.jpg);
+}
+.background:nth-child(1) {
+  z-index: 2;
+}
+
+.background:nth-child(2) {
+  z-index: 1;
+}
+.content-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+          transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.animation{
+	margin-top:-20%;
+}
+.cssload-loader {
+	width: 244px;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+	font-family: helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size:23px;
+	color: rgb(92,172,238);
+	letter-spacing: 0.2em;
+}
+.cssload-loader::before, .cssload-loader::after {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: rgb(92,172,238);
+	position: absolute;
+	animation: cssload-load 1.12s infinite alternate ease-in-out;
+		-o-animation: cssload-load 1.12s infinite alternate ease-in-out;
+		-ms-animation: cssload-load 1.12s infinite alternate ease-in-out;
+		-webkit-animation: cssload-load 1.12s infinite alternate ease-in-out;
+		-moz-animation: cssload-load 1.12s infinite alternate ease-in-out;
+}
+.cssload-loader::before {
+	top: 0;
+}
+.cssload-loader::after {
+	bottom: 0;
+}
+@keyframes cssload-load {
+	0% {
+		left: -10px;
+		height: 29px;
+		width: 15px;
+	}
+	50% {
+		height: 8px;
+		width: 39px;
+	}
+	100% {
+		left: 239px;
+		height: 29px;
+		width: 15px;
+	}
+}
+
+@-o-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 29px;
+		width: 15px;
+	}
+	50% {
+		height: 8px;
+		width: 39px;
+	}
+	100% {
+		left: 229px;
+		height: 29px;
+		width: 15px;
+	}
+}
+
+@-ms-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 29px;
+		width: 15px;
+	}
+	50% {
+		height: 8px;
+		width: 39px;
+	}
+	100% {
+		left: 229px;
+		height: 29px;
+		width: 15px;
+	}
+}
+
+@-webkit-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 29px;
+		width: 15px;
+	}
+	50% {
+		height: 8px;
+		width: 39px;
+	}
+	100% {
+		left: 229px;
+		height: 29px;
+		width: 15px;
+	}
+}
+
+@-moz-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 29px;
+		width: 15px;
+	}
+	50% {
+		height: 8px;
+		width: 39px;
+	}
+	100% {
+		left: 229px;
+		height: 29px;
+		width: 15px;
+	}
+}
+.content-wrapper2 {
+	margin-top:-12%;
+	width:90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  -webkit-transform: translateY(0vh);
+      -ms-transform: translateY(0vh);
+          transform: translateY(0vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+          transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Поменять заголовок</title>
+    <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+  <section class="background">
+    <div class="content-wrapper">
+		<div class="animation">
+			<div class="cssload-loader">ShopWheare 
+			</div>
+		</div>
+			
+    </div>
+
+	<div class="content-wrapper2">
+		<img src="arrow.png">
+	</div>
+			
+
+  </section>
+  <section class="background">
+    <div class="content-wrapper">
+
+	2стр
+    </div>
+  </section>
+   <section class="background">
+    <div class="content-wrapper">
+
+	3стр
+    </div>
+  </section>
+
+  
+    <script src='js/jsjs1.js'></script>
+	<script src='js/jsjs2.js'></script>
+	<script src="js/index.js"></script>  
+  </body>
+</html>
+
+
